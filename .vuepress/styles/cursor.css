@@ -1,0 +1,10 @@
+/* 光标 */
+body{
+	cursor: url(https://toby607-1317049696.cos.ap-guangzhou.myqcloud.com/cutRope/Arrow.cur),default;
+}
+button,a:hover,.xicon-container,.pointer {
+	cursor: url(https://toby607-1317049696.cos.ap-guangzhou.myqcloud.com/cutRope/LinkSelect.cur), pointer;
+}
+textarea,input:focus,p,input,h1,h2,h3,h4,h5,h6 {
+	cursor:url(https://toby607-1317049696.cos.ap-guangzhou.myqcloud.com/cutRope/Text.cur), text !important;	
+}
