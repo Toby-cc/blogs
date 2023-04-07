@@ -19,14 +19,18 @@ stages:
         displayName: Nodejs 构建
         nodeVersion: 16.14.2
         commands:
-          - rimraf node_modules
-          - npm install
-          - npm run build
+          - '# 设置NPM源，提升安装速度'
+          - npm config set registry https://registry.npmmirror.com
+          - ''
+          - '# 执行编译命令'
+          - npm install && npm run build
         artifacts:
           - name: BUILD_ARTIFACT
             path:
               - .vuepress/dist
-        caches: []
+        caches:
+          - ~/.npm
+          - ~/.yarn
         strategy: {}
       - step: publish@general_artifacts
         name: publish_general_artifacts
