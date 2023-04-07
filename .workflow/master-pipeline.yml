@@ -19,8 +19,8 @@ stages:
         displayName: Nodejs 构建
         nodeVersion: 16.14.2
         commands:
+          - rimraf node_modules
           - npm install
-          - ''
           - npm run build
         artifacts:
           - name: BUILD_ARTIFACT
