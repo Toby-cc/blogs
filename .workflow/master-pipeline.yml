@@ -19,8 +19,7 @@ stages:
         displayName: Nodejs 构建
         nodeVersion: 16.14.2
         commands:
-          - npm i -g yarn
-          - yarn install && rm -rf ./.vuepress/dist && yarn build
+          - npm install && rm -rf ./.vuepress/dist && npm run build
         artifacts:
           - name: BUILD_ARTIFACT
             path:
