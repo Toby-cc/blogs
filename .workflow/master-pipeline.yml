@@ -12,8 +12,7 @@ stages:
     displayName: 编译
     strategy: naturally
     trigger: auto
-    executor:
-      - Toby_c
+    executor: []
     steps:
       - step: build@nodejs
         name: build_nodejs
