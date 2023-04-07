@@ -28,9 +28,7 @@ stages:
           - name: BUILD_ARTIFACT
             path:
               - .vuepress/dist
-        caches:
-          - ~/.npm
-          - ~/.yarn
+        caches: []
         strategy: {}
       - step: publish@general_artifacts
         name: publish_general_artifacts
