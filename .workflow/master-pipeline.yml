@@ -19,6 +19,10 @@ stages:
         displayName: Nodejs 构建
         nodeVersion: 16.14.2
         commands:
+          - rimraf node_modules
+          - ''
+          - ''
+          - ''
           - npm install && rm -rf ./.vuepress/dist && chmod +x /root/workspace/Toby_c/blogs/node_modules/.bin/vuepress &&  npm run build
         artifacts:
           - name: BUILD_ARTIFACT
