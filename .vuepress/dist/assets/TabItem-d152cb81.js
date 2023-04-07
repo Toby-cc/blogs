@@ -1,1 +1,0 @@
-import{c as t,_ as a,p as s,q as n,$ as o,L as r}from"./framework-2dd55860.js";const _=t({name:"TabItem",props:{title:{type:String,required:!0},active:{type:Boolean,default:!1}}});function i(e,l,c,p,m,d){return s(),n("div",{class:r(["tab-item",{"tab-item__active":e.active}])},[o(e.$slots,"default")],2)}const u=a(_,[["render",i],["__file","TabItem.vue"]]);export{u as default};
