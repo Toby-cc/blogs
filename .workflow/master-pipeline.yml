@@ -21,7 +21,7 @@ stages:
         commands:
           - rimraf node_modules
           - ''
-          - ''
+          - rm -rf ./package-lock.json
           - ''
           - npm install && rm -rf ./.vuepress/dist && chmod +x /root/workspace/Toby_c/blogs/node_modules/.bin/vuepress &&  npm run build
         artifacts:
