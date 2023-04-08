@@ -16,6 +16,9 @@ blog:
   socialLinks:
     - { icon: 'LogoGithub', link: 'https://github.com/Toby-cc/blogs' }
     - { icon: 'T-gitee-fill-round', link: 'https://gitee.com/Toby_c/blogs' }
+isShowTitleInHome: true
+actionText: About
+actionLink: /views/other/about
 ---
 
 <style>
