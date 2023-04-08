@@ -29,7 +29,19 @@ stages:
             path:
               - .vuepress/dist
         caches: []
-        notify: []
+        notify:
+          - certificate: 7b2dc8f0-9a3e-013b-6e47-16f9fc8fe7ed
+            events:
+              - fail
+            content:
+              - repository
+              - pipeline
+              - stage
+              - task
+              - operator
+              - branch
+              - detail
+            type: dingtalk
         strategy:
           retry: '0'
       - step: publish@general_artifacts
@@ -53,6 +65,19 @@ stages:
         dependArtifact: output
         version: 1.0.0.0
         autoIncrement: true
-        notify: []
+        notify:
+          - certificate: 7b2dc8f0-9a3e-013b-6e47-16f9fc8fe7ed
+            events:
+              - success
+              - fail
+            content:
+              - repository
+              - pipeline
+              - stage
+              - task
+              - operator
+              - branch
+              - detail
+            type: dingtalk
         strategy:
           retry: '0'
