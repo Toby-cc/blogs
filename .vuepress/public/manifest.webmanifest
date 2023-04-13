@@ -1,0 +1,16 @@
+{
+  "name": "Toby的学习基地",
+  "short_name": "Toby的个人博客",
+  "description": "这是Toby的个人博客",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#fff",
+  "theme_color": "#3eaf7c",
+  "icons": [
+    {
+      "src": "https://toby607-1317049696.cos.ap-guangzhou.myqcloud.com/images/202303201032564.png",
+      "sizes": "220x220",
+      "type": "image/png"
+    }
+  ]
+}

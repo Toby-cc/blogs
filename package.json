@@ -33,6 +33,7 @@
     "@vuepress/bundler-vite": "^2.0.0-beta.61",
     "@vuepress/plugin-docsearch": "^2.0.0-beta.61",
     "@vuepress/plugin-palette": "^2.0.0-beta.61",
+    "@vuepress/plugin-pwa": "^2.0.0-beta.61",
     "@vuepress/plugin-register-components": "^2.0.0-beta.61",
     "vite-plugin-cdn-import": "^0.3.5"
   }
