@@ -19,7 +19,12 @@ blog:
 isShowTitleInHome: true
 actionText: About
 actionLink: /views/other/about
----
+--- 
+<!-- <contrastPicture
+  width="300px"
+  changedImg="https://toby607-1317049696.cos.ap-guangzhou.myqcloud.com/images/202303201025380.jpg"
+  originImg="https://toby607-1317049696.cos.ap-guangzhou.myqcloud.com/images/202303201032562.jpg"
+/> -->
 
 <style>
 .banner-brand__content {
