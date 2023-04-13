@@ -1,7 +1,8 @@
-import { viteBundler } from '@vuepress/bundler-vite'
 import theme from "./theme";
 import plugins from "./plugins";
-import head from './theme/head'
+import head from './head/index'
+import { viteBundler } from '@vuepress/bundler-vite'
+import bundler from './bundler/index'
 import { getDirname, path } from '@vuepress/utils'
 
 const __dirname = getDirname(import.meta.url)
@@ -12,10 +13,7 @@ export default {
   theme,
   plugins,
   head,
-  bundler: viteBundler({
-    viteOptions: {},
-    vuePluginOptions: {},
-  }),
+  bundler,
   markdown: {
     importCode: {
       handleImportPath: (str) =>
