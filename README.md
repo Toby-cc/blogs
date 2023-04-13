@@ -11,7 +11,7 @@ bannerBrand:
   description: 记录美好生活
   tagline: 个人空间随便写写，日常积累。
   buttons:
-    - { text: who am I？, link: '/blogs/konwMe/'}
+    - { text: who am I ？, link: '/blogs/konwMe/'}
 blog:
   socialLinks:
     - { icon: 'LogoGithub', link: 'https://github.com/Toby-cc/blogs' }
