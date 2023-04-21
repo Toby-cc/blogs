@@ -95,6 +95,11 @@
           </el-form-item>
         </template>
       </el-table-column>
+      <el-table-column label="操作" align="center" width="80">
+        <template #default="scope">
+          <el-link type="danger" @click="delSkuList(scope.$index)">删除</el-link>
+        </template>
+      </el-table-column>
     </el-table>
     <el-pagination
       small
@@ -109,6 +114,7 @@
   </el-form>
   <!-- 属性栏 -->
   <div style="margin-top: 50px;">
+    <h4>属性栏</h4>
     <div class="ab_Combining" v-for="item in combination" :key="item.id">
       <div class="name">{{ item.name }}:</div>
       <el-radio-group v-model="attributesValue[item.id]" size="large">
@@ -414,7 +420,6 @@ const handleClose = ()=> {
 
 // 判断商品sku
 const validators = (rule, value, callback)=> {
-  console.log('value: ', value);
   if (!value && value !== 0) {
     callback(new Error('参数不能为空'))
   } else {
@@ -422,6 +427,12 @@ const validators = (rule, value, callback)=> {
   }
 }
 
+// 删除列表某一项
+const delSkuList = (index)=> {
+  skuList.splice(index,1) // 删除列表中指定位置的项目
+}
+
+// 分页发生变化时要校验一下表单
 const handleCurrentChange = ()=> {
   setTimeout(() => {
     ruleTable.value.resetFields()
