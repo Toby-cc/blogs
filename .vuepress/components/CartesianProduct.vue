@@ -38,6 +38,7 @@
     <!-- 添加属性项的弹窗 -->
     <el-dialog
       v-model="dialogVisible"
+      v-if="dialogVisible"
       title="添加属性"
       width="400px"
       :before-close="handleClose"
