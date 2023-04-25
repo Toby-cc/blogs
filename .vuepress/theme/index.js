@@ -3,7 +3,6 @@ import recoTheme from "../components/vuepress-theme-reco/node/index";
 import navbar from "./navbar"
 import series from "./series"
 import bulletin from "./bulletin"
-import algolia from "./algolia"
 
 export default recoTheme({
     // logo: "https://toby607-1317049696.cos.ap-guangzhou.myqcloud.com/images202303021104339.png/compress50",
@@ -25,7 +24,6 @@ export default recoTheme({
         hideComments: false, // 全局隐藏评论，默认 false
       },
     },
-    // algolia,
     // bulletin,//公告
     // valineConfig 配置与 1.x 一致
     // valineConfig: {
