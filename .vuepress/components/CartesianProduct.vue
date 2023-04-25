@@ -440,7 +440,6 @@ const handleCurrentChange = ()=> {
 }
 
 const openDialog = ()=> {
-  dialogVisible.value = true
   console.log('触发',dialogVisible.value);
 }
 
