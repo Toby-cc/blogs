@@ -61,9 +61,7 @@ import { useThemeLocaleData } from '../composables';
 
 const router = useRouter()
 const routeLocale = useRouteLocale()
-console.log('routeLocale: ', routeLocale);
 const themeLocal = useThemeLocaleData()
-console.log('themeLocal: ', themeLocal);
 
 const goHome = () => {
   router.push(themeLocal.value.home || routeLocale.value)
