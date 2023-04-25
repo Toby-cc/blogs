@@ -4,7 +4,7 @@
     <h4 style="display: flex;">
       <span>属性信息</span>
       <div style="margin-left: 10px;cursor: pointer;">
-        <span @click.stop="dialogVisible = true"><SvgIcon name="ele-Plus" color="#5D67E8" :size="18"/></span>
+        <span @click.stop="openDialog"><SvgIcon name="ele-Plus" color="#5D67E8" :size="18"/></span>
       </div>
     </h4>
     <el-collapse v-model="activeNames" class="collapse">
@@ -437,6 +437,10 @@ const handleCurrentChange = ()=> {
   setTimeout(() => {
     ruleTable.value.resetFields()
   }, 100);
+}
+
+const openDialog = ()=> {
+  dialogVisible.value = true
 }
 
 onMounted(() => {
