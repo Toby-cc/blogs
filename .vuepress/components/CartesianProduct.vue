@@ -440,7 +440,7 @@ const handleCurrentChange = ()=> {
 }
 
 const openDialog = ()=> {
-  console.log('触发',dialogVisible.value);
+  dialogVisible.value = true
 }
 
 onMounted(() => {
