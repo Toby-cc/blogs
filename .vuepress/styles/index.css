@@ -1,4 +1,5 @@
 @import './cursor.css';
+@import './element.css';
 
 :root {
   height: 100vh;
