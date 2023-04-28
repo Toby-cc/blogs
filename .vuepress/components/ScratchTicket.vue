@@ -25,11 +25,11 @@ import { onMounted, reactive,defineProps, ref } from 'vue';
 const props = defineProps({
   topImg: {
     type:String,
-    default:'https://w.wallhaven.cc/full/yx/wallhaven-yxeww7.jpg'
+    default:'https://toby607-1317049696.cos.ap-guangzhou.myqcloud.com/images/blogs/wallhaven-yxeww7.jpg/compress20'
   },
   baseImg: {
     type:String,
-    default:'https://w.wallhaven.cc/full/zy/wallhaven-zygeko.jpg'
+    default:'https://toby607-1317049696.cos.ap-guangzhou.myqcloud.com/images/blogs/wallhaven-yxeww7.jpg/compress20'
   },
 })
 
