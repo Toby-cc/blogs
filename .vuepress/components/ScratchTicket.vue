@@ -80,13 +80,13 @@ const drawCover = (imgSrc)=> {
 const handleMouseDown = (e)=> {
   e.preventDefault();
   data.isMouseDown = true;
-  const touch = e.touches[0];
-  data.lastLoc = windowToCanvas(touch.clientX, touch.clientY);
+  data.lastLoc = windowToCanvas(e.clientX, e.clientY);
 }
 const handleTouchStart = (e)=> {
   e.preventDefault();
   data.isMouseDown = true;
-  data.lastLoc = windowToCanvas(e.clientX, e.clientY);
+  const touch = e.touches[0];
+  data.lastLoc = windowToCanvas(touch.clientX, touch.clientY);
 }
 
 const handleMouseMove = (e)=> {
