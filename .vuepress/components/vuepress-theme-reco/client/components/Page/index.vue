@@ -9,7 +9,7 @@
           {{ frontmatter.description?.name }}
           <SvgIcon :name="frontmatter.description?.detailIcon" :size="frontmatter.description?.detailIconSize" v-if="frontmatter.description?.detailIcon"/>
         </p>
-        <p align="center">
+        <p align="center" v-if="!frontmatter.isLabelImage">
           <img width="500" :src="frontmatter.labelImage"/>
         </p>
         <Password v-if="!pagePasswordPass" @pass="handlePass" />

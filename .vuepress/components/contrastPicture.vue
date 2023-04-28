@@ -1,7 +1,8 @@
 <template>
   <div 
     class="container" 
-    :style="{width:'50%'}"
+    :style="{width:width}"
+    style="max-width: 600px;"
     ref="container"  
     @touchstart.prevent="onTouchStart"
   >
@@ -11,6 +12,7 @@
       @mousemove.stop="onMouseMove"
       @mouseup.stop="onMouseUp"
       @mouseleave.stop="onMouseUp"
+
       @touchmove="touchmove"
       @onTouchEnd="onMouseUp"
     >
@@ -21,7 +23,7 @@
       />
 
       <!-- 需改高 -->
-      <div id="clip" ref="clip" :style="{ clip: clip }">
+      <div id="clip" :style="{ clip: clip }">
         <el-image
           class="origin-img"
           :src="originImg"
