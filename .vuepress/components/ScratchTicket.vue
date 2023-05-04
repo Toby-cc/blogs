@@ -15,21 +15,22 @@
       @touchcancel="handleMouseOut"
     />
     <!-- 底部图片 -->
-    <img :src="baseImg">
+    <img :src="withBase(baseImg)">
   </div>
 </template>
 
 <script setup>
 import { onMounted, reactive,defineProps, ref } from 'vue';
+import { withBase } from '@vuepress/client'
 
 const props = defineProps({
   topImg: {
     type:String,
-    default:'https://toby607-1317049696.cos.ap-guangzhou.myqcloud.com/images/blogs/wallhaven-yxeww7.jpg/compress20'
+    default:"/images/images_blogs_wallhaven-yxeww7.jpg"
   },
   baseImg: {
     type:String,
-    default:'https://toby607-1317049696.cos.ap-guangzhou.myqcloud.com/images/blogs/wallhaven-yxeww7.jpg/compress20'
+    default:"/images/images_blogs_wallhaven-zygeko.jpg"
   },
 })
 
@@ -52,7 +53,7 @@ onMounted(() => {
 
   const img = new Image();
   img.crossOrigin = 'anonymous'; 
-  img.src = props.baseImg;
+  img.src = withBase(props.baseImg);
   img.onload = function () {
     data.canvasWidth = width;
     data.canvasHeight = width/(img.width/img.height);
@@ -65,7 +66,7 @@ const initialize =()=> {
   canvas.width = data.canvasWidth;
   canvas.height = data.canvasHeight;
   ctx = canvas.getContext('2d');
-  drawCover(props.topImg);
+  drawCover(withBase(props.topImg));
 }
 
 const drawCover = (imgSrc)=> {
