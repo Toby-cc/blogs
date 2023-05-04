@@ -11,10 +11,7 @@ export default {
   theme,
   plugins,
   head,
-  markdown: {
-    importCode: {
-      handleImportPath: (str) =>
-        str.replace(/^@/, path.resolve(__dirname, '../')),
-    },
+  alias: {
+    '@': path.resolve(__dirname, './'),
   },
 };
