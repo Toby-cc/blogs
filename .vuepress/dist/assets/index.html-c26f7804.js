@@ -35,11 +35,11 @@ canvas <span class="token punctuation">{</span>
 <span class="token keyword">const</span> props <span class="token operator">=</span> <span class="token function">defineProps</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
   <span class="token literal-property property">topImg</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token comment">// 顶部图片</span>
     <span class="token literal-property property">type</span><span class="token operator">:</span>String<span class="token punctuation">,</span>
-    <span class="token keyword">default</span><span class="token operator">:</span><span class="token string">&#39;https://w.wallhaven.cc/full/yx/wallhaven-yxeww7.jpg&#39;</span>
+    <span class="token keyword">default</span><span class="token operator">:</span><span class="token string">&#39;01.jpg&#39;</span>
   <span class="token punctuation">}</span><span class="token punctuation">,</span>
   <span class="token literal-property property">baseImg</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token comment">// 底部图片</span>
     <span class="token literal-property property">type</span><span class="token operator">:</span>String<span class="token punctuation">,</span>
-    <span class="token keyword">default</span><span class="token operator">:</span><span class="token string">&#39;https://w.wallhaven.cc/full/zy/wallhaven-zygeko.jpg&#39;</span>
+    <span class="token keyword">default</span><span class="token operator">:</span><span class="token string">&#39;02.jpg&#39;</span>
   <span class="token punctuation">}</span><span class="token punctuation">,</span>
 <span class="token punctuation">}</span><span class="token punctuation">)</span>
 <span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
