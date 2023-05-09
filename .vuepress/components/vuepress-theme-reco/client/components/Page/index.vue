@@ -2,18 +2,19 @@
   <main class="page-container" :class="pageClass">
     <div :class="{'page-card':!frontmatter.NoPageCard}">
       <h1 v-if="!!title" class="page-title">{{ title }}</h1>
-      <PageInfo :page-data="pageData" />
-      
+      <PageInfo :page-data="pageData" v-if="pagePasswordPass"/>
       <div class="theme-reco-default-content">
-        <p v-if="frontmatter.description?.detailShow" class="blockquote">
-          {{ frontmatter.description?.name }}
-          <SvgIcon :name="frontmatter.description?.detailIcon" :size="frontmatter.description?.detailIconSize" v-if="frontmatter.description?.detailIcon"/>
-        </p>
-        <p align="center" v-if="!frontmatter.isLabelImage">
-          <img width="500" :src="frontmatter.labelImage"/>
-        </p>
-        <Password v-if="!pagePasswordPass" @pass="handlePass" />
-        <Content v-else />
+        <Password v-if="!pagePasswordPass" :page-data="pageData" @pass="handlePass" />
+        <template v-else>
+          <p v-if="frontmatter.description?.detailShow" class="blockquote">
+            {{ frontmatter.description?.name }}
+            <SvgIcon :name="frontmatter.description?.detailIcon" :size="frontmatter.description?.detailIconSize" v-if="frontmatter.description?.detailIcon"/>
+          </p>
+          <p align="center" v-if="!frontmatter.isLabelImage">
+            <img width="500" :src="frontmatter.labelImage"/>
+          </p>
+          <Content/>
+        </template>
       </div>
       <PageMeta />
       <PageNav />

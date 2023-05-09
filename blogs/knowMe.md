@@ -1,6 +1,6 @@
 ---
 title: 关于
-date: 2023/3/16
+date: 2023/2/22
 lastUpdated: true
 editLink: false
 NoPageCard: true
