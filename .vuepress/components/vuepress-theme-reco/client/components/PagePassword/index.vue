@@ -33,6 +33,7 @@
 import { reactive, ref } from 'vue';
 import { usePageInfo, useHandlePassword } from './hook'
 import { md5 } from '@vuepress-reco/shared'
+import { ElMessage } from "element-plus";
 import { useThemeLocaleData } from '@vuepress/plugin-theme-data/client'
 
 const themeData = useThemeLocaleData()
@@ -84,12 +85,13 @@ const rules = reactive({
 
 const submitForm = (formEl) => {
   if (!formEl) return
-  formEl.validate((valid) => {
+  formEl.validate((valid,fields) => {
     if (valid) {
       focus()
       password.value = ruleForm.password
     } else {
-      return false
+      const key = Object.keys(fields)
+      ElMessage({ showClose: true, message: fields[key[0]][0]?.message||'请检查必填字段', type: 'warning', })
     }
   })
 }

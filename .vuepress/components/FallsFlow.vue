@@ -28,7 +28,6 @@ let dragIndex = null;
 let dragWidth = null;
 
 const onDragStart = (index, event) => {
-  console.log('index, event: ', index, event);
   dragIndex = index;
   dragWidth = event.target.offsetWidth; // 保存原始宽度
   event.dataTransfer.setData("text/plain", index);
