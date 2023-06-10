@@ -68,8 +68,6 @@ export default defineComponent({
     const categoryList = computed(() => {
       let list = []
       const currentCategoryKey = categoryPosts.value.currentCategoryKey
-      console.log('categoryPosts.value: ', categoryPosts.value);
-      console.log('currentCategoryKey: ', currentCategoryKey);
       
       if (currentCategoryKey) {
         const { items = [] } =
@@ -80,7 +78,6 @@ export default defineComponent({
       
       return list
     })
-    console.log('categoryList: ', categoryList);
     
     const headerTag = computed(()=>{
       return categoryPosts.value.currentCategoryKey
@@ -134,6 +131,9 @@ export default defineComponent({
   margin: 1.5rem 0;
   .text {
     color: #000;
+  }
+  .el-button {
+    background-color: var(--el-button-bg-color);
   }
 }
 .dark .headerTag {
