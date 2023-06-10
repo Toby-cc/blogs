@@ -5,8 +5,7 @@ import { getDirname, path } from '@vuepress/utils'
 
 const __dirname = getDirname(import.meta.url)
 export default {
-  // base: '/blogs/',
-  base: '/',
+  base: '/blogs/',
   title: "Toby的学习基地",
   description: "这是Toby的个人博客",
   theme,

@@ -96,8 +96,8 @@ if (!__VUEPRESS_SSR__) {
   handlePagation = (page) => {
     currentPage.value = page
 
-    const homeHref = withBase(themeLocal.value.home || routeLocale.value)
-    router.push(page > 1 ? `${homeHref}?page=${page}` : homeHref)
+    // const homeHref = withBase(themeLocal.value.home || routeLocale.value)
+    router.push(page > 1 ? `?page=${page}` : '')
 
     setTimeout(() => {
       if (blogContentTop.value === 0) {
