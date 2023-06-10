@@ -85,13 +85,9 @@ const useEditNavLink = (): ComputedRef<null | NavLinkType> => {
 
 const useLastUpdated = (): ComputedRef<null | string> => {
   const siteLocale = useSiteLocaleData()
-  console.log('siteLocale: ', siteLocale);
   const themeLocal = useThemeLocaleData()
-  console.log('themeLocal: ', themeLocal);
   const page = usePageData<RecoThemePageData>()
-  console.log('page: ', page);
   const frontmatter = usePageFrontmatter<RecoThemeNormalPageFrontmatter>()
-  console.log('frontmatter: ', frontmatter);
 
   return computed(() => {
     const showLastUpdated =
