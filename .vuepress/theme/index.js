@@ -1,5 +1,6 @@
 
-import recoTheme from "../components/vuepress-theme-reco/node/index";
+import recoTheme from "../components/vuepress-theme-reco/lib/node/index.d.ts";
+// import recoTheme from "vuepress-theme-reco";
 import navbar from "./navbar"
 import series from "./series"
 import bulletin from "./bulletin"
