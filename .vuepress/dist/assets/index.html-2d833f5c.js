@@ -1,1 +1,0 @@
-import{_ as t,x as o,o as s,p as n,q as _}from"./framework-2dd55860.js";const r={__name:"index.html",setup(a){const e=o();return s(()=>{e.push("/404.html")}),(c,u)=>(n(),_("div"))}},m=t(r,[["__file","index.html.vue"]]);export{m as default};
