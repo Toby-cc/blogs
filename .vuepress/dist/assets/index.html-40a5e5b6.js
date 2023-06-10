@@ -1,0 +1,1 @@
+import{_ as t,u as o,j as s,o as n,c as _}from"./app-4c1d205a.js";const r={__name:"index.html",setup(c){const e=o();return s(()=>{e.push("/404.html")}),(a,u)=>(n(),_("div"))}},m=t(r,[["__file","index.html.vue"]]);export{m as default};
