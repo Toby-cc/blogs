@@ -1,12 +1,8 @@
 export default {
-  "/docs/theme-reco/": [
+  "/docs/": [
     {
-      text: "module one",
-      children: ["home", "theme"],
-    },
-    {
-      text: "module two",
-      children: ["api", "plugin"],
+      text: "笔记",
+      children: ["v-html","windowOpen","git"],
     },
   ],
 }

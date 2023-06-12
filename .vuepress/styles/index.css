@@ -5,7 +5,7 @@
   height: 100vh;
 }
 
-.navbar-container .site-name {
+.navbar-container .site-name,.series-container .site-name{
   font-size: 1.2rem;
   font-weight: 600;
   color: transparent;

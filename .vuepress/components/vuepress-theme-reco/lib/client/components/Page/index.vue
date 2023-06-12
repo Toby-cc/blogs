@@ -35,8 +35,11 @@ import Password from '../PagePassword/index.vue'
 import { usePassword } from './hook'
 
 const pageData = usePageData()
+console.log(' usePageData(): ',  usePageData());
 const { options } = useComment()
+console.log('useComment(): ', useComment());
 const { pagePasswordPass, handlePass } = usePassword()
+console.log('usePassword(): ', usePassword());
 
 const title = computed(
   () => pageData?.value?.frontmatter?.title

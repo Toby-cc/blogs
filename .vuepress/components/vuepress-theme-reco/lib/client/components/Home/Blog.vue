@@ -4,7 +4,7 @@
       <PostList :data="postsOfCurrentPage" />
       <Pagation
         :currentPage="currentPage"
-        :total="posts.length"
+        :total="postsLsit.length"
         @change="handlePagation"
       />
     </section>
@@ -64,6 +64,15 @@ import { useThemeLocaleData } from '../../composables';
 
 const { posts, categorySummary } = usePageData()
 
+const postsLsit = computed(()=>{
+  return posts.filter(item=>{
+    const startIndex = item.path.indexOf("/") + 1;  // 第一个斜杠后的索引
+    const endIndex = item.path.indexOf("/", startIndex);  // 第二个斜杠的索引
+    const substr = item.path.substring(startIndex, endIndex);  // 截取内容
+    return !['docs','konwMe'].includes(substr)
+  })
+})
+
 const currentPage = ref(1)
 const blogContentTop = ref(0)
 const perPage = 10
@@ -80,7 +89,7 @@ const postsOfCurrentPage = computed(() => {
   const start = (currentPage.value - 1) * perPage
   const end = currentPage.value * perPage
 
-  return (posts || []).slice(start, end)
+  return (postsLsit.value || []).slice(start, end)
 })
 
 let handlePagation = (page) => {}

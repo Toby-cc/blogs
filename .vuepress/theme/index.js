@@ -6,6 +6,7 @@ import series from "./series"
 import bulletin from "./bulletin"
 
 export default recoTheme({
+    style: "@vuepress-reco/style-default",
     // logo: "https://toby607-1317049696.cos.ap-guangzhou.myqcloud.com/images202303021104339.png/compress50",
     author: "Toby",
     authorAvatar: "https://toby607-1317049696.cos.ap-guangzhou.myqcloud.com/images/202303201032561.png/compress50",
@@ -13,9 +14,10 @@ export default recoTheme({
     lastUpdatedText: "更新时间",
     lastUpdated:true,
     editLink:false,
-    colorModeSwitch:false,
+    // colorModeSwitch:false,
     catalogTitle: '文档目录',
-    // series,//左侧边栏
+    // autoSetSeries: true,
+    series,//左侧边栏
     navbar,
     commentConfig: {
       type: 'valine',

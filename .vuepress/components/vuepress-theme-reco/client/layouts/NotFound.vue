@@ -12,7 +12,9 @@
       <!-- <h1>404</h1> -->
       <SvgIcon name="T-yepian" :size="200"/>
       <p>曾经有个页面摆在你面前你没有珍惜，直到它404了……</p>
-      <el-button type="primary" color="#626aef" size="large" @click="goHome"><SvgIcon name="T-shouye2" :size="20" color="#fff"/> Go Home</el-button>
+      <RouterLink :to="themeLocal.home">
+        <el-button type="primary" color="#626aef" size="large"><SvgIcon name="T-shouye2" :size="20" color="#fff"/> Go Home</el-button>
+      </RouterLink>
     </div>
     <div class="transform">
       <div class="rail">
@@ -54,18 +56,11 @@
 </template>
 
 <script lang="ts" setup>
-import { useRouter } from 'vue-router'
-import { useRouteLocale, withBase } from '@vuepress/client';
 import Common from '../components/Common/index.vue'
 import { useThemeLocaleData } from '../composables';
 
-const router = useRouter()
-const routeLocale = useRouteLocale()
 const themeLocal = useThemeLocaleData()
 
-const goHome = () => {
-  router.push(themeLocal.value.home || routeLocale.value)
-}
 </script>
 
 <style lang='scss' scoped>
