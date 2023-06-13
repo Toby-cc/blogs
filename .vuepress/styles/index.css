@@ -82,3 +82,9 @@
   outline: 200px solid transparent;
   filter: url(#fe2);
 }
+
+.background .page-card {
+  --linesColor: rgba(50,0,0,0.05);
+  background-image: repeating-linear-gradient(-45deg,var(--linesColor),var(--linesColor) 1px,transparent 0,transparent 50%);
+  background-size: 20px 20px;
+} 
