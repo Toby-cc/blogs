@@ -1,0 +1,1 @@
+import{_ as t,a as n,o,c,j as s,f as a,b as r,F as _}from"./app-5e744d50.js";const d={},l={class:"theme-reco-default-content"};function m(f,i){const e=n("Content");return o(),c(_,null,[s(" content "),a("section",l,[r(e)])],2112)}const u=t(d,[["render",m],["__file","MdContent.vue"]]);export{u as default};

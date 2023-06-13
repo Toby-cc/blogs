@@ -1,0 +1,1 @@
+import{s,o,c as r,y as t,z as n,_}from"./app-5e744d50.js";const c=s({__name:"DynamicBorder",props:{className:{type:String,default:""}},setup(e){return(a,l)=>(o(),r("div",{class:n(["skulls",e.className])},[t(a.$slots,"default",{},void 0,!0)],2))}});const i=_(c,[["__scopeId","data-v-a337513a"],["__file","DynamicBorder.vue"]]);export{i as default};
