@@ -1,6 +1,6 @@
 ---
 title: 谈谈 window.open()
-pageClass: resource
+pageClass: background
 ---
 
 ## 了解 window.open()

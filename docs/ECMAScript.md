@@ -1,6 +1,6 @@
 ---
 title: ES 新特性
-pageClass: resource
+pageClass: background
 ---
 
 ## 认识ECMAScript

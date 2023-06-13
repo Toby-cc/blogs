@@ -1,6 +1,6 @@
 ---
 title: v-html 指令
-pageClass: resource
+pageClass: background
 ---
 
 ## 认识 v-html指令
