@@ -5,6 +5,7 @@ export default [
   {
     text: "笔记",
     children: [
+      { text: "ES 新特性", link: "/docs/ECMAScript" },
       { text: "v-html 指令", link: "/docs/v-html" },
       { text: "谈谈 window.open()", link: "/docs/windowOpen" },
       { text: "git 常用命令大全", link: "/docs/git" },

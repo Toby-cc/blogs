@@ -2,7 +2,7 @@ export default {
   "/docs/": [
     {
       text: "笔记",
-      children: ["v-html","windowOpen","git"],
+      children: ["ECMAScript","v-html","windowOpen","git"],
     },
   ],
 }
