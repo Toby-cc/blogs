@@ -1,6 +1,6 @@
 ---
 title: git 常用命令大全
-pageClass: resource
+pageClass: background
 ---
 
 其实掌握好十几个常用命令，已经可以得心应手地使用Git了。熟练使用，恐怕要记住60～100个命令。
