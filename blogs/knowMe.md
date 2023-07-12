@@ -4,8 +4,9 @@ date: 2023/2/22
 lastUpdated: true
 editLink: false
 NoPageCard: true
+sticky: 1
 tags:
-  - 个人介绍
+  - 个人
 permalink: /konwMe/
 hideComments: true
 pageClass: konwMe

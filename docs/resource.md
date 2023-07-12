@@ -6,7 +6,6 @@ description:
   detailIconSize: 20
   detailShow: true
 pageClass: background
-permalink: /docs/resource/
 ---
 
 ## 文档

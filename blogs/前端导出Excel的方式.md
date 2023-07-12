@@ -249,6 +249,9 @@ const exportTable = () => {
   headerRow.eachCell(cell => {
     cell.alignment = { horizontal: 'center' };
   });
+  // 设置整列的样式
+  const column = worksheet.getColumn('A');
+  column.alignment = { vertical: 'middle', horizontal: 'center' };
 
   
 

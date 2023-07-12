@@ -3,6 +3,7 @@
 
 :root {
   height: 100vh;
+  --primaryColor:#5D67E8;
 }
 
 .navbar-container .site-name,.series-container .site-name{
@@ -88,3 +89,7 @@
   background-image: repeating-linear-gradient(-45deg,var(--linesColor),var(--linesColor) 1px,transparent 0,transparent 50%);
   background-size: 20px 20px;
 } 
+
+.custom-container >p {
+  margin: 0;
+}

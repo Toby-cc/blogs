@@ -69,7 +69,7 @@ const postsLsit = computed(()=>{
     const startIndex = item.path.indexOf("/") + 1;  // 第一个斜杠后的索引
     const endIndex = item.path.indexOf("/", startIndex);  // 第二个斜杠的索引
     const substr = item.path.substring(startIndex, endIndex);  // 截取内容
-    return !['docs','konwMe'].includes(substr)
+    return !['docs','konwMe','everydayPicture'].includes(substr)
   })
 })
 

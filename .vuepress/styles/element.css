@@ -1,5 +1,21 @@
+.el-button--primary {
+  --primaryColor-active:#5d67e8cc;
+  --primaryColor-hover:#5d67e880;
+}
+
 .el-button.el-button--primary {
-  background-color: var(--el-color-primary);
+  background-color: var(--primaryColor);
+  --el-button-bg-color: var(--primaryColor);
+  --el-button-border-color: var(--primaryColor)
+}
+.el-button.el-button--primary:hover,
+.el-button.el-button--primary:focus {
+  border-color: var(--primaryColor-hover);
+  background-color: var(--primaryColor-hover);
+}
+.el-button.el-button--primary:active {
+  border-color: var(--primaryColor-active);
+  background-color: var(--primaryColor-active);
 }
 .el-button.el-button--success {
   background-color: var(--el-color-success);

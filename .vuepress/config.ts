@@ -13,5 +13,6 @@ export default {
   head,
   alias: {
     '@': path.resolve(__dirname, './'),
+    '@utils': path.resolve(__dirname, './components/utils'),
   },
 };

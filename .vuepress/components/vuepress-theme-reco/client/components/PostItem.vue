@@ -9,7 +9,7 @@
       </div>
     </template>
     <div class="card_content">
-      <p align="center">
+      <p align="center" v-if="data.frontmatter.labelImage">
       <img width="500" :src="data.frontmatter.labelImage"/>
       </p>
       <p class="blockquote" v-if="description.name">

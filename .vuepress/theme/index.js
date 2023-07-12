@@ -13,6 +13,7 @@ export default recoTheme({
     // repo: 'https://gitee.com/Toby_c/blogs',
     lastUpdatedText: "更新时间",
     lastUpdated:true,
+    primaryColor: '#5D67E8',
     editLink:false,
     // colorModeSwitch:false,
     catalogTitle: '文档目录',
