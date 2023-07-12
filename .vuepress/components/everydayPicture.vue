@@ -8,7 +8,7 @@
     </el-button>
     <el-button round :icon="DocumentAdd" @click="newFolder()">新建文件夹</el-button>
   </div>
-  <el-empty description="NO Data" v-if="!items.length"/>
+  <el-empty description="NO Data" v-if="!items.length && !loading"/>
   <div v-loading="loading">
     <Waterfall :list="items" :breakpoints="breakpoints" v-if="!WaterfallShow">
       <template #item="{item,index}">
@@ -46,8 +46,7 @@ import {
 import { Upload, DocumentAdd,Back,Delete } from '@element-plus/icons-vue'
 import { nextTick, onMounted, ref } from "vue";
 import { ElMessage, ElMessageBox } from 'element-plus'
-import { LazyImg, Waterfall } from 'vue-waterfall-plugin-next'
-import 'vue-waterfall-plugin-next/dist/style.css'
+import { LazyImg, Waterfall } from '@/components/Waterfall'
 
 const items = ref<any>([])
 const loading = ref(false)

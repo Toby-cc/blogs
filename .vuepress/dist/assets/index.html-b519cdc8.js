@@ -1,0 +1,1 @@
+import{_ as t,r as c,o as n,c as o,d as r}from"./app-0af0c28d.js";const _={};function a(s,d){const e=c("everydayPicture");return n(),o("div",null,[r(e)])}const i=t(_,[["render",a],["__file","index.html.vue"]]);export{i as default};
