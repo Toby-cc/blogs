@@ -4,6 +4,7 @@ export default {
       text: "笔记",
       children: [
         "ECMAScript",
+        "higherOrderFun",
         "v-html",
         "windowOpen",
         "arrayAPI",

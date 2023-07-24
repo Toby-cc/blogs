@@ -7,6 +7,7 @@ export default [
     icon: 'T-bianjibijishishouxie',
     children: [
       { text: "ES 新特性", link: "/docs/ECMAScript/" },
+      { text: '高阶函数的使用', link:'/docs/higherOrderFun/'},
       { text: "v-html 指令", link: "/docs/v-html/" },
       { text: "谈谈 window.open()", link: "/docs/windowOpen/" },
       { text: "JS中数组API总结", link: "/docs/arrayAPI/" },
