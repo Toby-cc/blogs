@@ -16,6 +16,7 @@ blog:
   socialLinks:
     - { icon: 'LogoGithub', link: 'https://github.com/Toby-cc/blogs' }
     - { icon: 'T-gitee-fill-round', link: 'https://gitee.com/Toby_c/blogs' }
+    - { icon: 'T-juejin-logo', link: 'https://juejin.cn/user/2582085142583742?utm_source=gold_browser_extension' }
 isShowTitleInHome: true
 actionText: About
 actionLink: /views/other/about
