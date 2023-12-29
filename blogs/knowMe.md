@@ -38,7 +38,7 @@ pageClass: konwMe
     <el-divider content-position="left" class="konwMe-divider"><SvgIcon name="T-shouye1" :size="30"/>关于我</el-divider>
       <div class="card-content">
         <div>● enmmmm 怎么说呢？其实一开始是写java的，后来因为热爱，所以成为了前端。</div>
-        <div>● 目前在 深圳 任职 前端开发工程师</div>
+        <div>● 目前在 广州 任职 前端开发工程师</div>
         <div>● 我很平庸的，只求今天的自己比昨天优秀就满足了。</div>
       </div>
     <!-- 关于本站 -->
