@@ -1,6 +1,6 @@
 <template>
   <section class="home-blog-content">
-    <section class="blog-list">
+    <section class="blog-list" id="blog-list">
       <PostList :data="postsOfCurrentPage" />
       <Pagation
         :currentPage="currentPage"
@@ -109,12 +109,15 @@ if (!__VUEPRESS_SSR__) {
     router.push(page > 1 ? `?page=${page}` : '')
 
     setTimeout(() => {
-      if (blogContentTop.value === 0) {
-        const blogContent = document.querySelector('.home-blog-content')
+      
+      // if (blogContentTop.value === 0) {
+        // const blogContent = document.querySelector('.home-blog-content')
+        const blogContent = document.querySelector('#blog-list')
+        
         if (blogContent) blogContentTop.value = blogContent.getBoundingClientRect().top
-      }
+      // }
 
-      window.scrollTo({ left: 0, top: -blogContentTop.value - 250, behavior: 'smooth' })
+      window.scrollTo({ left: 0, top: blogContentTop.value - 50, behavior: 'smooth' })
     }, 100)
   }
 

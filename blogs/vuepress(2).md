@@ -9,7 +9,7 @@ editLink: false
 tags:
   - Vuepress2.X
 categories:
-  - 前端
+  - Vue
 prev:
   text: 搭建Vuepress项目
   link: /vuepress_1/

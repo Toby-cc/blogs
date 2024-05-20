@@ -23,7 +23,7 @@ pageClass: konwMe
         <span class="header_name">Toby</span>
         <span style="margin:0 10px">|</span>
         <span>广东·四会</span>
-        <div>Hi！我叫梁铖淳。我在这里写写日常，记录平日积累进行总结。</div>
+        <div>Hi！我叫Toby。我在这里写写日常，记录平日积累进行总结。</div>
         <div>
           欢迎各位访问
           <SvgIcon name="T-kaixin" :size="30"/>

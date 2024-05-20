@@ -8,7 +8,8 @@ description:
   name: 为了在非同源环境下实现安全的跨文档通信探讨iframe和postMessage的工作原理
   detailShow: false
 tags:
-  - 学习
+  - 分享
+  - iframe
 categories:
   - js
 permalink: /postMessage/

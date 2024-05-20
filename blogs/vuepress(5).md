@@ -9,7 +9,7 @@ editLink: false
 tags:
   - Vuepress2.X
 categories:
-  - 前端
+  - Vue
 prev:
   text: 使用阿里巴巴图标
   link: /vuepress_4/

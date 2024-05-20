@@ -8,7 +8,8 @@ description:
   name: 在项目开发中。导出excel表格应该算是一个比较常见的需求了
   detailShow: false
 tags:
-  - 学习
+  - 分享
+  - Excel
 categories:
   - js
 permalink: /Excel/

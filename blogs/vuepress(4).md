@@ -9,7 +9,7 @@ editLink: false
 tags:
   - Vuepress2.X
 categories:
-  - 前端
+  - Vue
 prev:
   text: 使用 Element-Plus 组件库
   link: /vuepress_3/

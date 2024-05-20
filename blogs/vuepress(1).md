@@ -10,7 +10,7 @@ editLink: false
 tags:
   - Vuepress2.X
 categories:
-  - 前端
+  - Vue
 next:
   text: 使用社区主题和插件
   link: /vuepress_2/
