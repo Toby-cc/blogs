@@ -11,9 +11,9 @@ cd docs/.vuepress/dist
 
 git init
 git add -A
-git commit -m 'deploy'
+git commit -m '静态包'
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:Toby-cc/blogs.git
-
-cd -
+git remote add origin git@github.com:Toby-cc/Blog.git
+git branch -M main
+git push -u origin main
